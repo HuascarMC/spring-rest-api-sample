@@ -1,14 +1,15 @@
 package hello;
 
+
 public class Cab {
 
     private final long id;
     private final String state;
     private final String name;
-    private final String coords;
+    private final Coords coords;
     private final String city;
 
-    public Cab(long id, String state, String name, String coords, String city) {
+    public Cab(long id, String state, String name, Coords coords, String city) {
         this.id = id;
         this.state = state;
         this.name = name;
@@ -28,7 +29,7 @@ public class Cab {
         return name;
     }
 
-    public String getCoords() {
+    public Coords getCoords() {
         return coords;
     }
 

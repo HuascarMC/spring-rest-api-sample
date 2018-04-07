@@ -17,6 +17,13 @@ public class CabController {
 // the defaultValue of "World" is used.
     @RequestMapping("/cab")
     public Cab cab(@RequestParam(value="name", defaultValue="World") String name) {
-        return new Cab(counter.incrementAndGet(), "free", "Opel", "1,1", "Madrid");
+        Coords coords = new Coords("1", "1");
+        return new Cab(counter.incrementAndGet(), "free", "Opel", coords, "Madrid");
     }
+
+    @RequestMapping("/coords")
+    public Coords coords(@RequestParam(value="name", defaultValue="World") String name) {
+        return new Coords("1", "1");
+    }
+
 }
