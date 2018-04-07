@@ -1,0 +1,3 @@
+Spring uses the Jackson JSON library to automatically marshal instances of type Greeting into JSON.
+
+Spring uses a controller to handle HTTP requests. They are defined by @RestController annotation.
