@@ -8,7 +8,7 @@ public class Cab {
     private final String coords;
     private final String city;
 
-    public Greeting(long id, String state, String name, String coords, String city) {
+    public Cab(long id, String state, String name, String coords, String city) {
         this.id = id;
         this.state = state;
         this.name = name;
